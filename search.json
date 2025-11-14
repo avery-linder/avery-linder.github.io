@@ -7,24 +7,17 @@
     "text": "About this blog"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/does-leading-at-halftime-predict-winning/index.html",
+    "href": "posts/does-leading-at-halftime-predict-winning/index.html",
+    "title": "Does Leading at Halftime Predict Winning in Big Ten Men’s College Basketball?",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "text": "FILL IN WORDS HERE YAY!!\n\n\nCode\nlibrary(tidyverse)\n\nbasketball &lt;- read_csv(\"Project 1 Data - Sheet1.csv\")\n\nbig &lt;- basketball |&gt;\n  filter(HalftimeStatus == \"Winning\") |&gt; \n group_by(Team, Result) |&gt;\n  summarise(total_games = n())\n\nggplot() + \n  geom_bar(data=big, aes(x=reorder(Team, total_games), weight = total_games, fill=Result)) + \n  coord_flip() +\n  labs(\n    x=\"\", \n    y=\"Number of Games\", \n    title=\"Leading at Half Pays Off in the Big Ten\", \n    subtitle=\"Teams like Michigan State, Wisconsin and Maryland often convert halftime leads into \\nvictories. Meanwhile, Nebraska, rarely finds itself ahead at the break.\", \n    caption=\"Source: Sports Reference | By Avery Linder\"\n    ) +\n  scale_fill_manual(values=c(\"#939598\", \"#0088CE\")) + \n  theme_minimal() +\n  theme(\n    plot.title.position = \"plot\",\n    plot.title = element_text(size = 20, face = \"bold\"),\n    plot.subtitle = element_text(size=10),\n    axis.title = element_text(size = 9), \n  )"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Latest posts",
     "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nNov 3, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 31, 2025\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+    "text": "Does Leading at Halftime Predict Winning in Big Ten Men’s College Basketball?\n\n\n\nncaa\n\nbigten\n\nbasketball\n\n\n\n\n\n\n\n\n\nNov 17, 2025\n\n\nAvery Linder\n\n\n\n\n\nNo matching items"
   }
 ]
